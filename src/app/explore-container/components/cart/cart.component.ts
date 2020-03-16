@@ -12,6 +12,7 @@ import { Component, OnInit } from "@angular/core";
 export class CartComponent implements OnInit {
   items: any = [];
   qty: number;
+  cartItems;
 
   constructor(
     private db: DataServiceService,
@@ -55,11 +56,11 @@ export class CartComponent implements OnInit {
     return b;
   };
 
-  createOrder(cartItems: CartItem[]) {
+  createOrder(cartItems) {
     this.presentModal(cartItems);
   }
 
-  async presentModal(cartItems: CartItem[]) {
+  async presentModal(cartItems) {
     const modal = await this.modalController.create({
       component: ConfirmOrderPage,
       componentProps: {
