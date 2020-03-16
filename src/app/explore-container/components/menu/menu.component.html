@@ -1,0 +1,17 @@
+<div class="card" *ngFor="let item of menuItems">
+  <ion-card>
+    <img src="{{ item.img_url }}" />
+    <ion-card-header>
+      <ion-card-title> {{ item.name }} </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{ item.description }}</p>
+      <p>{{ item.price }}</p>
+    </ion-card-content>
+
+    <ion-button expand="block" fill="none" (click)="addToCart(item)">
+      Add To Cart</ion-button
+    >
+  </ion-card>
+</div>

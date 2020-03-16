@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+ion-title {
+  line-height: 40px;
+  padding-left: 60px;
+  background: url("https://img.icons8.com/cotton/48/000000/pot-.png") no-repeat
+    left center;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
