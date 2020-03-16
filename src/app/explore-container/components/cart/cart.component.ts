@@ -12,7 +12,7 @@ import { Component, OnInit } from "@angular/core";
 export class CartComponent implements OnInit {
   items: any = [];
   qty: number;
-  cartItems;
+  cartItem;
 
   constructor(
     private db: DataServiceService,
@@ -37,7 +37,7 @@ export class CartComponent implements OnInit {
     return cartItems;
   }
 
-  removeItem(cartItem: CartItem) {
+  removeItem(cartItem) {
     console.warn(cartItem);
     return this.db.removeItem(cartItem);
   }
