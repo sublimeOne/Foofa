@@ -7,7 +7,6 @@ import { CartComponent } from "../components/cart/cart.component";
 import { OrdersComponent } from "../components/orders/orders.component";
 import { ExploreContainerComponent } from "../components/explore/explore-container.component";
 import { MenuComponent } from "../components/menu/menu.component";
-import { ConfirmOrderPage } from "../pages/confirm-order/confirm-order.page";
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule],
@@ -15,15 +14,13 @@ import { ConfirmOrderPage } from "../pages/confirm-order/confirm-order.page";
     ExploreContainerComponent,
     MenuComponent,
     CartComponent,
-    OrdersComponent,
-    ConfirmOrderPage
+    OrdersComponent
   ],
   exports: [
     ExploreContainerComponent,
     MenuComponent,
     CartComponent,
-    OrdersComponent,
-    ConfirmOrderPage
+    OrdersComponent
   ]
 })
 export class ExploreContainerComponentModule {}
